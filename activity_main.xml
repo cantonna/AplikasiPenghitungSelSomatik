@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <!--ImageView to preview the selected image-->
+    <ImageView
+        android:id="@+id/IVPreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!--ImageView to preview yang udah dikotak2-->
+    <ImageView
+        android:id="@+id/IVPreviewImageRes"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/IVPreviewImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!--Textview for displaying banyak bulatan-->
+    <TextView
+        android:id="@+id/idTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IVPreviewImageRes"
+        android:padding="2dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <!--Button to open the image selector-->
+    <Button
+        android:id="@+id/BCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="CALCULATE"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!--Button to open the image selector-->
+    <Button
+        android:id="@+id/BSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BCalc"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="32dp"
+        android:text="SELECT"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!--Button to open the image selector-->
+    <Button
+        android:id="@+id/BSelectHisto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BCalc"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:text="HISTORY"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>
